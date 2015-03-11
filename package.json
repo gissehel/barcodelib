@@ -1,0 +1,30 @@
+{
+  "name": "barcodelib",
+  "version": "0.0.1",
+  "homepage": "http://github.com/gissehel/barcodelib",
+  "author": "gissehel",
+  "description": "",
+  "contributors": [
+    {
+      "name": "gissehel",
+      "email": "public-dev-barcodelib@gissehel.org"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/gissehel/barcodelib"
+  },
+  "keywords": [
+    "barcodelib",
+    "barcode"
+  ],
+  "dependencies": {},
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "main": "./lib/index",
+  "scripts": {
+    "prepublish": "mimosa build"
+  }
+}
