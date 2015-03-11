@@ -9,7 +9,7 @@ exports.config =
       sourceMap: false
   watch:
     sourceDir: "src"
-    compiledDir: "lib"
+    compiledDir: "/home/gissehel/web/files/vroc"
     javascriptDir: null
   jshint:
     rules:
