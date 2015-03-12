@@ -1,0 +1,104 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='chrome=1')
+    title Barcodelib by gissehel
+    link(rel='stylesheet', href='stylesheets/styles.css')
+    link(rel='stylesheet', href='stylesheets/pygment_trac.css')
+    script(src='javascripts/scale.fix.js')
+    script(src='//code.jquery.com/jquery-git2.min.js')
+    script(src='//gissehel.github.io/barcodelib/lib/barcodelib.js')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+    //if lt IE 9
+      script(src='//html5shiv.googlecode.com/svn/trunk/html5.js')
+    script
+      $(function($){barcodelib.draw_barcodes($,{replacekey:1});})
+      
+  body
+    .wrapper
+      header.without-description
+        h1 Barcodelib
+        p
+        p.view
+          a(href='https://github.com/gissehel/barcodelib')
+            | View the Project on GitHub 
+            small gissehel/barcodelib
+        ul
+          li
+            a(href='https://github.com/gissehel/barcodelib/zipball/master')
+              | Download 
+              strong ZIP File
+          li
+            a(href='https://github.com/gissehel/barcodelib/tarball/master')
+              | Download 
+              strong TAR Ball
+          li
+            a(href='https://github.com/gissehel/barcodelib')
+              | View On 
+              strong GitHub
+      section
+        h3
+          a#welcome-to-github-pages.anchor(href='#welcome-to-github-pages', aria-hidden='true')
+            span.octicon.octicon-link
+          | Welcome to GitHub Pages.
+        p 
+          | This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:
+        pre
+          | $ cd your_repo_root/repo_name
+          | $ git fetch origin
+          | $ git checkout gh-pages
+        p
+          .barcode(barcode='378001080100005060',type='ean')
+        p 
+          | If you&apos;re using the GitHub for Mac, simply sync your repository and you&apos;ll see the new branch.
+        h3
+          a#designer-templates.anchor(href='#designer-templates', aria-hidden='true')
+            span.octicon.octicon-link
+          | Designer Templates
+        p
+          | We&apos;ve crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.
+        h3
+          a#rather-drive-stick.anchor(href='#rather-drive-stick', aria-hidden='true')
+            span.octicon.octicon-link
+          | Rather Drive Stick?
+        p
+          | If you prefer to not use the automatic generator, push a branch named 
+          code gh-pages
+          |  to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.
+        h3
+          a#authors-and-contributors.anchor(href='#authors-and-contributors', aria-hidden='true')
+            span.octicon.octicon-link
+          | Authors and Contributors
+        p
+          | You can 
+          a.user-mention(href='https://github.com/blog/821') @mention
+          |  a GitHub username to generate a link to their profile. The resulting 
+          code &lt;a&gt;
+          |  element will link to the contributor&apos;s GitHub Profile. For example: In 2007, Chris Wanstrath (
+          a.user-mention(href='https://github.com/defunkt') @defunkt
+          | ), PJ Hyett (
+          a.user-mention(href='https://github.com/pjhyett') @pjhyett
+          | ), and Tom Preston-Werner (
+          a.user-mention(href='https://github.com/mojombo') @mojombo
+          | ) founded GitHub.
+        h3
+          a#support-or-contact.anchor(href='#support-or-contact', aria-hidden='true')
+            span.octicon.octicon-link
+          | Support or Contact
+        p
+          | Having trouble with Pages? Check out the documentation at 
+          a(href='https://help.github.com/pages') https://help.github.com/pages
+          |  or contact 
+          a(href='mailto:support@github.com') support@github.com
+          |  and we&rsquo;ll help you sort it out.
+    footer
+      p
+        | Project maintained by 
+        a(href='https://github.com/gissehel') gissehel
+      p
+        | Hosted on GitHub Pages &mdash; Theme by 
+        a(href='https://github.com/orderedlist') orderedlist
+    //if !IE
+      script.fixScale(document);
+
