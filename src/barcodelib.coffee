@@ -1,4 +1,4 @@
-->
+(->
     local_window = @
 
     @barcodelib =
@@ -255,3 +255,5 @@
                             $barcode_element[0].canvas = canvas
                 barcode_element.draw_barcode(current_params)
             return
+)()
+
