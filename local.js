@@ -1,17 +1,1 @@
-$(function($) {
-  var on_code_changed, on_name_changed;
-  barcodelib.draw_barcodes($, {
-    replacekey: 1
-  });
-  on_code_changed = function() {
-    $('#main-code').attr('barcode', $('#input-code').val());
-    return $('#main-code')[0].draw_barcode();
-  };
-  on_name_changed = function() {
-    return $('#main-name').text($('#input-name').val());
-  };
-  $('#input-code').on('input', on_code_changed);
-  $('#input-name').on('input', on_name_changed);
-  on_code_changed();
-  return on_name_changed();
-});
+$(function(n){var e,a;return barcodelib.draw_barcodes(n,{replacekey:1}),e=function(){return n("#main-code").attr("barcode",n("#input-code").val()),n("#main-code")[0].draw_barcode()},a=function(){return n("#main-name").text(n("#input-name").val())},n("#input-code").on("input",e),n("#input-name").on("input",a),e(),a()});
